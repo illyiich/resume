@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Suranna&display=swap');
+
+body {
+    /* font-family: Vedana, Ceneva, sans-serif;  Если нет 1-го шрифта, исп-ся 2-й и т.д*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* font: normal 20px 'Roboto', sans-serif; /* Сокращённая запись/ */
+    line-height: 1.6em; /* Междустрочный интервал */
+    /* text-decoration: underline; */
+    /* font-style: italic; */
+    /* letter-spacing: 2px; */
+    /* word-spacing: 20px; Расстояние между словами */ 
+    background-color: #f1f1f1;
+    color: #0f141e;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+
+/* h1 {
+    color: red;
+    font-size: 50px;
+    letter-spacing: 4px; /* Расстояние между буквами */
+    /* border-bottom: 2px solid black;
+} */
