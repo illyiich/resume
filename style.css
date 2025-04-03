@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Suranna&display=swap');
 
+* {
+    box-sizing: border-box; /*Добавить границу в размеры самого эл-та */
+  }
+
 body {
     /* font-family: Vedana, Ceneva, sans-serif;  Если нет 1-го шрифта, исп-ся 2-й и т.д*/
     font-family: 'Roboto', sans-serif;
@@ -15,14 +19,45 @@ body {
     color: #0f141e;
 }
 
+.container {
+    max-width: 750px; /* Макс-я ширина для адаптивного дизайна (чтобы контент не растягивался на широких экранах) */
+    margin: auto; /* По центру, для всех 4-х сторон равномерно */
+    padding-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); /* Тень */
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
 .info-text p {
     font-style: italic;
     font-weight: bold;
     color: #86898f;
+    margin: 0;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
 }
 
 .card {
     border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px; /* Хорошая практика использования, не нарушает структуру сайта */
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.btn-form {
+    margin-top: 5px;
 }
 
 .bg-yellow {
@@ -31,6 +66,10 @@ body {
 
 .bg-red {
     background: #ffe5e5;
+}
+
+.bg-green {
+    background: #d6f2ae;
 }
 
 
