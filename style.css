@@ -46,6 +46,28 @@ body {
     margin-bottom: 10px;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s; /* Плавный анимационный переход  для всех изменяемых свойств элемента (цвет, размер, прозрачность и т.д.) длительностью 0.2сек */
+}
+
+ a:hover { /*Псевдоселектор состояния сссылки, становится оранжевой при наведении курсора */
+    color: orange;
+    text-decoration: underline; /* Подчёркивание */
+    /* font-size: 2rem; Изменение размера при наведении*/
+    /* transform: scale(1.05);  позволяет визуально изменять элемент: перемещать, масштабировать, вращать, наклонять и искажать.  
+    В данном случае увеличивается в 1,05 раза*/
+} /* Работает не только для ссылок */
+
+a:active { /* Если нажать и держать */
+    color: blue;
+}
+
+a:visited {
+    color: red; /* Становится красной после перехода по ссылке */
+}
+
 .card {
     border-radius: 20px;
     padding: 15px 20px;
@@ -58,6 +80,24 @@ body {
 
 .btn-form {
     margin-top: 5px;
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit; /* заставляет элемент наследовать шрифт у своего родителя. */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8; /* элемент будет на 80% непрозрачным (и на 20% прозрачным) при наведении */
+}
+
+.card div {
+    margin-bottom: 10px;
 }
 
 .bg-yellow {
