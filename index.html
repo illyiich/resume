@@ -9,6 +9,15 @@
     <title>Ilya Tikhonov resume</title>
 </head>
 <body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hobby">Хобби</a></li>
+            <li><a href="#experience">Опыт работы</a></li>
+            <li><a href="#connection">Связь</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
 
         <div class="info">
@@ -34,25 +43,27 @@
             </div>
         </div>
     
-        <div class="card bg-yellow">
+        <div class="card bg-yellow" id="hobby">
             <h2>Мои хобби:</h2>
-            <ol>
+            <ol class="list">
                 <li>Gym</li>
                 <li>Фотография</li>
                 <li>Путешествия</li>
             </ol>
         </div>
     
-        <div class="card bg-red">
+        <!-- (tr>(td{$})*5)*6  Emmet - 5 стобцов, 6 строчек-->
+
+        <div class="card bg-red" id="experience">
             <h2>Опыт работы</h2>
-            <table>
-                <thead>
+            <table class="table">
+                <!-- <thead>
                     <tr>
                         <th>Название</th>
                         <th>Должность</th>
                         <th>Год</th>
                     </tr>
-                </thead>
+                </thead> -->
                 <tbody>
                     <tr>
                         <td>КСК</td>
@@ -78,7 +89,7 @@
             </table>  
         </div>
         
-        <div class="card bg-green">
+        <div class="card bg-green" id="connection">
             <h2>Связаться со мной</h2>
             <form>
                 <div>
