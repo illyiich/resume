@@ -65,6 +65,11 @@ body {
 
 .info {
     margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
 }
 
 .info-text p {
@@ -182,7 +187,45 @@ a:visited {
     background: #d6f2ae;
 }
 
+.form h2 {
+    text-align: center;
+}
 
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group{
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;  
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;  /* Прозрачный */
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none; /* Не будет синей линии */
+    font-family: inherit;
+
+}
 /* h1 {
     color: red;
     font-size: 50px;
