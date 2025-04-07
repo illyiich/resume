@@ -24,6 +24,11 @@ body {
     /* padding: 10px 20px; Теперь всё пространство занимает каждый эл-т li*/
     margin-bottom: 10px;
     border-radius: 10px;
+    position: fixed; /* Навигация будет всегда наверху экрана, вне зависимости от прокрутки */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .navbar ul {
@@ -55,6 +60,7 @@ body {
     max-width: 750px; /* Макс-я ширина для адаптивного дизайна (чтобы контент не растягивался на широких экранах) */
     margin: auto; /* По центру, для всех 4-х сторон равномерно */
     padding-top: 30px;
+    margin-top: 50px;
 }
 
 .avatar {
@@ -83,13 +89,20 @@ body {
     margin-bottom: 10px;
 }
 
+@media (max-width: 650px) { /* Как только ширина экрана станет 650px, то задаём новые условия для класса info (центрирование) */
+    .info {
+        display: block; /* Элементы будут перекидываться но новую строку */
+        text-align: center;
+    }
+}
+
 a {
     color: #000;
     text-decoration: none;
     transition: all .2s; /* Плавный анимационный переход  для всех изменяемых свойств элемента (цвет, размер, прозрачность и т.д.) длительностью 0.2сек */
 }
 
- a:hover { /*Псевдоселектор состояния сссылки, становится оранжевой при наведении курсора */
+a:hover { /*Псевдоселектор состояния сссылки, становится оранжевой при наведении курсора */
     color: orange;
     text-decoration: underline; /* Подчёркивание */
     /* font-size: 2rem; Изменение размера при наведении*/
@@ -205,6 +218,18 @@ a:visited {
 
 .form-row .form-group:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        display: block; /* Элементы будут перекидываться но новую строку */
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .form-group label {
